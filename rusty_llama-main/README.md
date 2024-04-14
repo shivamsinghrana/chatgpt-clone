@@ -1,41 +1,36 @@
-<picture>
-<img src="https://raw.githubusercontent.com/Me163/rusty_llama/main/demo.gif" />
-</picture>
+# Chatbot WebApp with Rust, TailwindCSS, and Open Source Language Model
 
-# Rusty Llama Webapp
-A simple webapp to showcase the ability to write a simple chatbot webapp using only Rust, TailwindCSS and an Open Source language model such as a variant of GPT, LLaMA, etc.
+This repository contains a simple web application built with Rust, TailwindCSS, and an Open Source language model (e.g., GPT, LLaMA). The purpose of this project is to showcase how to create a chatbot web application using these technologies.
 
-## Setup Instructions
+## Features
 
-### Hardware
-By default, the project has Apple's Metal acceleration enabled. If you are not on a macOS system, you may need to disable the `metal` feature in `Cargo.toml`. Similarly, if you are on a system with an Nvidia GPU, you may need to add CUDA as a feature (I haven't tested this, anyone who does so feel free to PR an update to this readme).
+- *Rust Backend*: The backend of the web application is written in Rust, providing robustness and performance.
+- *TailwindCSS Styling*: The frontend UI is styled using TailwindCSS, allowing for rapid prototyping and customization.
+- *Open Source Language Model*: The chatbot functionality is powered by an Open Source language model such as GPT or LLaMA, demonstrating the use of advanced natural language processing capabilities.
 
-### Rust Toolchain
-You'll need to use the nightly Rust toolchain, and install the `wasm32-unknown-unknown` target as well as the Trunk and `cargo-leptos` tools:
-```
-rustup toolchain install nightly
-rustup target add wasm32-unknown-unknown
-cargo install trunk cargo-leptos
-```
-### Model
-You'll also need to download a model (in GGML format) of your choice that is [supported by the Rustformers/llm Crate](https://huggingface.co/models?search=ggml).
+## Getting Started
 
-In the root of the project directory, you'll find a `.env` file where an environment variable called `MODEL_PATH` is defined. Replace the value with the full path to the desired model file.
+To run the web application locally, follow these steps:
 
-### TailwindCSS
-Install TailwindCSS with `npm install -D tailwindcss`
+1. *Clone the Repository*: 
 
-### Run
-To run the project locally, 
-1. run `npx tailwindcss -i ./input.css -o ./style/output.css --watch` in a terminal - this will build `style/output.css` and automatically rebuild when a change is detected in `input.css`
-1. `cargo leptos watch` in the project directory. 
-1. In in your browser, navigate to [http://localhost:3000/?](http://localhost:3000/?)
 
-## Tested Models
-* [Wizard-Vicuna-7B-Uncensored.ggmlv3.q8_0.bin](https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GGML)
-* [Wizard-Vicuna-7B-Uncensored.ggmlv3.q4_K_S.bin](https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GGML)
-* [Wizard-Vicuna-30B-Uncensored.ggmlv3.q2_K.bin](https://huggingface.co/TheBloke/Wizard-Vicuna-30B-Uncensored-GGML)
+2. *Navigate to the Project Directory*:
 
-<picture>
-<img src="https://raw.githubusercontent.com/Me163/rusty_llama/main/metal_llama.png" />
-</picture>
+
+3. *Install Dependencies*:
+
+
+4. *Run the Application*:
+
+
+5. *Access the Application*:
+Open your web browser and navigate to http://localhost:port (replace port with the appropriate port number if it's different from the default).
+
+## Contributing
+
+Contributions are welcome! If you have any ideas for improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
